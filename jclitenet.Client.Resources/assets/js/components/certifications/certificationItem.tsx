@@ -20,7 +20,7 @@ class CertificationItem extends React.Component <ICertificationItemProp, any>
                     <span className="description cert-dates">{this.props.model.expStartDate.getFullYear() } - {this.props.model.expEndDate.getFullYear()}</span>
                 </div>
             </div>
-        )
+        ) 
     }
 }
 
