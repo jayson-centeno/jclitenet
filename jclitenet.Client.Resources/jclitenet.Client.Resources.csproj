@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65163D60-A2D1-44E2-AA4E-5ECFE8F95375}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jclitenet.Client.Resources</RootNamespace>
+    <AssemblyName>jclitenet.Client.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\animation.css" />
+    <Content Include="assets\css\app.css" />
+    <Content Include="assets\css\base.css" />
+    <Content Include="assets\css\bootstrap-custom.css" />
+    <Content Include="assets\css\media.css" />
+    <Content Include="assets\css\normalize.css" />
+    <Content Include="assets\images\profile-bg.png" />
+    <Content Include="assets\images\upload\2cbf4fb7e2823ce69b932954b163cf93.png" />
+    <TypeScriptCompile Include="assets\js\actions\login.ts" />
+    <Content Include="assets\js\lib\bootstrap\bootstrap.min.js" />
+    <Content Include="assets\js\lib\domReady.js" />
+    <Content Include="assets\js\lib\fetch\fetch.min.js" />
+    <Content Include="assets\js\lib\history\History.min.js" />
+    <Content Include="assets\js\lib\jquery\jquery.min.js" />
+    <Content Include="assets\js\lib\modernizr\modernizr-2.8.3.js" />
+    <Content Include="assets\js\lib\q\q.js" />
+    <Content Include="assets\js\lib\q\q.min.js" />
+    <Content Include="assets\js\lib\react-redux\react-redux.min.js" />
+    <Content Include="assets\js\lib\react-router-redux\actions.js" />
+    <Content Include="assets\js\lib\react-router-redux\index.js" />
+    <Content Include="assets\js\lib\react-router-redux\middleware.js" />
+    <Content Include="assets\js\lib\react-router-redux\reducer.js" />
+    <Content Include="assets\js\lib\react-router-redux\sync.js" />
+    <Content Include="assets\js\lib\react-router\ReactRouter.min.js" />
+    <Content Include="assets\js\lib\react\react-dom-server.js" />
+    <Content Include="assets\js\lib\react\react-dom-server.min.js" />
+    <Content Include="assets\js\lib\react\react-dom.js" />
+    <Content Include="assets\js\lib\react\react-dom.min.js" />
+    <Content Include="assets\js\lib\react\react-with-addons.js" />
+    <Content Include="assets\js\lib\react\react-with-addons.min.js" />
+    <Content Include="assets\js\lib\react\react.min.js" />
+    <Content Include="assets\js\lib\redux\redux.min.js" />
+    <Content Include="assets\js\lib\require\r.js" />
+    <Content Include="assets\js\lib\require\require.js" />
+    <Content Include="assets\js\lib\underscore\underscore-min.js" />
+    <Content Include="assets\js\main.js" />
+    <TypeScriptCompile Include="assets\js\actions\register.tsx" />
+    <TypeScriptCompile Include="assets\js\components\certifications\certificationItem.tsx" />
+    <TypeScriptCompile Include="assets\js\components\certifications\certifications.tsx" />
+    <TypeScriptCompile Include="assets\js\components\contacts\contacts.tsx" />
+    <TypeScriptCompile Include="assets\js\components\educations\educationItem.tsx" />
+    <TypeScriptCompile Include="assets\js\components\educations\educations.tsx" />
+    <TypeScriptCompile Include="assets\js\components\home\index.tsx" />
+    <TypeScriptCompile Include="assets\js\components\interests\interests.tsx" />
+    <TypeScriptCompile Include="assets\js\components\introduction\introduction.tsx" />
+    <TypeScriptCompile Include="assets\js\components\languages\languageItem.tsx" />
+    <TypeScriptCompile Include="assets\js\components\languages\languages.tsx" />
+    <TypeScriptCompile Include="assets\js\components\login\login.tsx" />
+    <TypeScriptCompile Include="assets\js\components\personalLinks\personalLinksItem.tsx" />
+    <TypeScriptCompile Include="assets\js\components\personalLinks\personalLinks.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\contactNumber.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\education.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\email.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\infoBoxWrapper.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\addressIndustryInfo.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\latestJob.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\previousJobs.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\profilePicture.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\profileSummary.tsx" />
+    <TypeScriptCompile Include="assets\js\components\profileSummary\Skype.tsx" />
+    <TypeScriptCompile Include="assets\js\components\registration\registration.tsx" />
+    <TypeScriptCompile Include="assets\js\components\welcome\welcome.tsx" />
+    <TypeScriptCompile Include="assets\js\models\registrationModel.ts" />
+    <TypeScriptCompile Include="assets\js\components\skills\skills.tsx" />
+    <TypeScriptCompile Include="assets\js\components\socialMedia\socialMedia.tsx" />
+    <TypeScriptCompile Include="assets\js\components\tools\loader.tsx" />
+    <TypeScriptCompile Include="assets\js\components\workExperience\workExperienceItem.tsx" />
+    <TypeScriptCompile Include="assets\js\components\workExperience\workExperiences.tsx" />
+    <TypeScriptCompile Include="assets\js\constants\constants.ts" />
+    <TypeScriptCompile Include="assets\js\interfaces\services.d.ts" />
+    <TypeScriptCompile Include="assets\js\models\certificationsModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\contactsModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\educationsModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\interestsModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\languagesModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\personalLinksModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\skillsModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\socialMediaModel.tsx" />
+    <TypeScriptCompile Include="assets\js\models\workExperiencesModel.tsx" />
+    <TypeScriptCompile Include="assets\js\reducers\login.ts" />
+    <TypeScriptCompile Include="assets\js\reducers\reducers.ts" />
+    <TypeScriptCompile Include="assets\js\reducers\register.tsx" />
+    <TypeScriptCompile Include="assets\js\router.tsx" />
+    <Content Include="assets\js\services\authentication-service.js" />
+    <Content Include="assets\js\services\resume-service.js" />
+    <Content Include="assets\js\services\tutorial-service.js" />
+    <Content Include="assets\js\utilities\utilities.js" />
+    <Content Include="assets\js\views\index.html" />
+    <Content Include="assets\js\views\login.html" />
+    <Content Include="assets\js\views\partial\address-editor.html" />
+    <Content Include="assets\js\views\partial\editor-popover-content.html" />
+    <Content Include="assets\js\views\partial\editor-popover.html" />
+    <Content Include="assets\js\views\partial\editor-setup.html" />
+    <Content Include="assets\js\views\partial\email-editor.html" />
+    <Content Include="assets\js\views\partial\introduction-editor.html" />
+    <Content Include="assets\js\views\partial\tutorials.html" />
+    <Content Include="assets\js\views\partial\tutorials\createtutorial.html" />
+    <Content Include="assets\js\views\partial\tutorials\tutorial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <TypeScriptCompile Include="assets\js\app.tsx" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <TypeScriptCompile Include="assets\js\components\headerSummary\headerSummary.tsx" />
+    <TypeScriptCompile Include="assets\js\interfaces\interfaces.d.ts" />
+    <TypeScriptCompile Include="assets\js\services\authService.ts" />
+    <TypeScriptCompile Include="assets\js\stores\login.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react-redux\react-redux.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react-router\react-router.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\lib.es6.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react\react-addons-create-fragment.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react\react-dom.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react\react.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react\react-global.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react-router\history.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\redux\redux.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\require\require.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\object-assign\object-assign.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react-router-redux\react-router-redux-2.x.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\react-router-redux\react-router-redux.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\react-router\react-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\redux\redux.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scripts\typings\react-router-redux\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="AfterBuild">
+    <ItemGroup>
+      <ResourceStuff Include="**\*.json;.\**\*.html;.\**\*.jpg;.\**\*.gif;.\**\*.png;.\**\*.js;.\**\*.map;.\**\*.css;.\**\*.eot;.\**\*.svg;.\**\*.ttf;.\**\*.woff;.\**\*.config;.\**\*.html;" />
+      <RemoveRootResourceDir Include="$([System.IO.Directory]::GetDirectories('$RootResourceDir')" />
+    </ItemGroup>
+    <RemoveDir Directories="@RemoveRootResourceDir" ContinueOnError="true" />
+    <Copy SourceFiles="@(ResourceStuff)" DestinationFolder="$(SolutionDir)\..\http\%(RecursiveDir)">
+    </Copy>
+  </Target>
+</Project>
