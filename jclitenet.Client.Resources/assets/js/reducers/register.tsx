@@ -11,11 +11,11 @@ let initialState: IRegistrationState = {
 export default function register(state = initialState, action) {
     switch (action.type) {
         case REGISTER_CONSTANTS.REGISTER:
-            {
-                return Object.assign({}, state, {
-                    isRegistered: true
-                });
-            }
+        {
+            return Object.assign({}, state, {
+                isRegistered: true
+            });
+        }
         default:
             return state;
     }

@@ -22,14 +22,16 @@ using WebActivatorEx;
 [assembly: PreApplicationStartMethod(typeof(StructuremapMvc), "Start")]
 [assembly: ApplicationShutdownMethod(typeof(StructuremapMvc), "End")]
 
-namespace jclitenet.Domain.App_Start
-{
-    using DependencyResolution;
-    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
-    using StructureMap;
-    using System.Web.Mvc;
+namespace jclitenet.Domain.App_Start {
+	using System.Web.Mvc;
 
-    public static class StructuremapMvc {
+    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+
+	using jclitenet.Domain.DependencyResolution;
+
+    using StructureMap;
+    
+	public static class StructuremapMvc {
         #region Public Properties
 
         public static StructureMapDependencyScope StructureMapDependencyScope { get; set; }

@@ -33,13 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -51,8 +44,8 @@
     <Content Include="assets\css\bootstrap-custom.css" />
     <Content Include="assets\css\media.css" />
     <Content Include="assets\css\normalize.css" />
-    <Content Include="assets\images\profile-bg.png" />
-    <Content Include="assets\images\upload\2cbf4fb7e2823ce69b932954b163cf93.png" />
+    <Content Include="assets\css\images\profile-bg.png" />
+    <Content Include="assets\css\images\upload\2cbf4fb7e2823ce69b932954b163cf93.png" />
     <TypeScriptCompile Include="assets\js\actions\login.ts" />
     <Content Include="assets\js\lib\bootstrap\bootstrap.min.js" />
     <Content Include="assets\js\lib\domReady.js" />
@@ -60,7 +53,6 @@
     <Content Include="assets\js\lib\history\History.min.js" />
     <Content Include="assets\js\lib\jquery\jquery.min.js" />
     <Content Include="assets\js\lib\modernizr\modernizr-2.8.3.js" />
-    <Content Include="assets\js\lib\q\q.js" />
     <Content Include="assets\js\lib\q\q.min.js" />
     <Content Include="assets\js\lib\react-redux\react-redux.min.js" />
     <Content Include="assets\js\lib\react-router-redux\actions.js" />
@@ -76,6 +68,7 @@
     <Content Include="assets\js\lib\react\react-with-addons.js" />
     <Content Include="assets\js\lib\react\react-with-addons.min.js" />
     <Content Include="assets\js\lib\react\react.min.js" />
+    <Content Include="assets\js\lib\redux-form\redux-form.min.js" />
     <Content Include="assets\js\lib\redux\redux.min.js" />
     <Content Include="assets\js\lib\require\r.js" />
     <Content Include="assets\js\lib\require\require.js" />
@@ -106,6 +99,7 @@
     <TypeScriptCompile Include="assets\js\components\profileSummary\profileSummary.tsx" />
     <TypeScriptCompile Include="assets\js\components\profileSummary\Skype.tsx" />
     <TypeScriptCompile Include="assets\js\components\registration\registration.tsx" />
+    <TypeScriptCompile Include="assets\js\components\registration\registrationForm.tsx" />
     <TypeScriptCompile Include="assets\js\components\welcome\welcome.tsx" />
     <TypeScriptCompile Include="assets\js\models\registrationModel.ts" />
     <TypeScriptCompile Include="assets\js\components\skills\skills.tsx" />
@@ -154,6 +148,7 @@
     <TypeScriptCompile Include="assets\js\interfaces\interfaces.d.ts" />
     <TypeScriptCompile Include="assets\js\services\authService.ts" />
     <TypeScriptCompile Include="assets\js\stores\login.ts" />
+    <TypeScriptCompile Include="assets\js\typings\q\Q.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\react-redux\react-redux.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\react-router\react-router.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\lib.es6.d.ts" />
@@ -162,8 +157,10 @@
     <TypeScriptCompile Include="assets\js\typings\react\react.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\react\react-global.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\react-router\history.d.ts" />
+    <TypeScriptCompile Include="assets\js\typings\redux-form\redux-form.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\redux\redux.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\require\require.d.ts" />
+    <TypeScriptCompile Include="assets\js\validations\registerValidation.ts" />
     <TypeScriptCompile Include="Scripts\typings\object-assign\object-assign.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\react-router-redux\react-router-redux-2.x.d.ts" />
     <TypeScriptCompile Include="assets\js\typings\react-router-redux\react-router-redux.d.ts" />

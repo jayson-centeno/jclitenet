@@ -24,12 +24,18 @@ namespace jclitenet.Domain.DependencyResolution {
     using StructureMap.Pipeline;
     using StructureMap.TypeRules;
     using StructureMap;
-
+    using System.Web.Http;
     public class ControllerConvention : IRegistrationConvention {
         #region Public Methods and Operators
 
         public void Process(Type type, Registry registry) {
+
             if (type.CanBeCastTo<Controller>() && !type.IsAbstract) {
+                registry.For(type).LifecycleIs(new UniquePerRequestLifecycle());
+            }
+
+            if (type.CanBeCastTo<ApiController>() && !type.IsAbstract)
+            {
                 registry.For(type).LifecycleIs(new UniquePerRequestLifecycle());
             }
         }
@@ -38,7 +44,7 @@ namespace jclitenet.Domain.DependencyResolution {
 
         public void ScanTypes(StructureMap.Graph.Scanning.TypeSet types, Registry registry)
         {
-            throw new NotImplementedException();
+            return;
         }
     }
 }

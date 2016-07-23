@@ -15,25 +15,38 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace jclitenet.Domain.DependencyResolution {
+using Microsoft.AspNet.Identity.Owin;
+
+namespace jclitenet.Domain.DependencyResolution
+{
+    using Interfaces.Services;
+    using Security;
+    using Services;
     using StructureMap;
-    using StructureMap.Configuration.DSL;
     using StructureMap.Graph;
-	
-    public class DefaultRegistry : Registry {
+    using System.Web;
+    public class DefaultRegistry : Registry
+    {
         #region Constructors and Destructors
 
-        public DefaultRegistry() {
+        public DefaultRegistry()
+        {
             Scan(
-                scan => {
+                scan =>
+                {
                     scan.TheCallingAssembly();
                     scan.WithDefaultConventions();
-					scan.With(new ControllerConvention());
                 });
 
-            //For<IExample>().Use<Example>();
-        }
+            For<ApplicationSignInManager>().Use(ctx =>
+                    HttpContext.Current.GetOwinContext().GetUserManager<ApplicationSignInManager>());
 
-        #endregion
+            For<ApplicationUserManager>().Use(ctx =>
+                    HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>());
+
+            For<ISecurityService>().Use<SecurityService>();
+
+            #endregion
+        }
     }
 }

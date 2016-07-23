@@ -1,34 +1,34 @@
-﻿using jclitenet.Security.Model;
-using jclitenet.Security.Repository;
+﻿using jclitenet.Interfaces.Services;
+using jclitenet.Security.Model;
 using Microsoft.AspNet.Identity;
 using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace jclitenet.API.Controllers
 {
+    [Authorize]
     [RoutePrefix("app/auth")]
     public class AuthenticationController: ApiController
     {
-        private AuthRepository authRepository = null;
+        private readonly ISecurityService _securityService;
 
-        public AuthenticationController()
+        public AuthenticationController(ISecurityService securityService)
         {
-            authRepository = new AuthRepository();
+            _securityService = securityService;
         }
 
-        [HttpGet]
+        [AllowAnonymous]
         [Route("login/{email}/{password}")]
-        public bool Authenticate(string email, string password)
+        public bool GetAuthenticate(string email, string password)
         {
             return true;
         }
 
         [AllowAnonymous]
         [Route("register")]
-        [HttpPost]
         public async Task<IHttpActionResult> Register(UserModel userModel)
         {
-            IdentityResult result = await authRepository.RegisterUser(userModel);
+            IdentityResult result = await _securityService.Register(userModel.UserName, userModel.Password);
 
             if (result.Succeeded)
                 return Ok();

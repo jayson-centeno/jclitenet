@@ -106,4 +106,4 @@ interface ISocialMediaState extends ILoader { }
 
 interface IRegistrationModel { userName: string, email: string, password: string, confirmPassword: string }
 interface IRegistrationState { model: IRegistrationModel, isRegistered: boolean }
-interface IRegistrationProps { register():void }
+interface IRegistrationFormProps { fields: any, handleSubmit: any, resetForm: any, submitting:any }

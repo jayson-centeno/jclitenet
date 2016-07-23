@@ -1,9 +1,10 @@
 ﻿namespace jclitenet.Domain.Services
 {
     using Interfaces.Services;
-    using jclitenet.Security;
+    using Security;
     using Microsoft.AspNet.Identity.Owin;
     using System.Threading.Tasks;
+    using Microsoft.AspNet.Identity;
 
     public class SecurityService : ISecurityService
     {
@@ -20,6 +21,11 @@
         public async Task<SignInStatus> Login(string username, string password)
         {
             return await _signinManager.PasswordSignInAsync(username, password, isPersistent: false, shouldLockout: false);
+        }
+
+        public async Task<IdentityResult> Register(string username, string password)
+        {
+            return await _userManager.CreateAsync(new ApplicationUser() { Email = username, UserName = username } , password);
         }
     }
 }

@@ -23,9 +23,7 @@ import reducers from "reducers/reducers"
 
 let store = createStore(reducers)
 
-
 let NoMatch = []
-
 
 ReactDOM.render((
     <Provider store={store}> 
